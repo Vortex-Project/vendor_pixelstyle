@@ -17,10 +17,14 @@ PRODUCT_PACKAGES += \
     AmbientPlayProvider \
     SoundPickerPrebuilt \
     WallpaperPickerGooglePrebuilt \
-    NexusLauncherPrebuilt \
     WellbeingPrebuilt \
     MarkupGoogle \
     WeatherProvider
+
+#Lawnchair
+PRODUCT_PACKAGES += \
+    Lawnchair \
+    LawnConf
 
 ifeq ($(TARGET_GAPPS_ARCH),arm64)
 PRODUCT_PACKAGES += \
@@ -88,3 +92,8 @@ PRODUCT_COPY_FILES += \
     vendor/pixelstyle/etc/permissions/org.pixelexperience.ambient.play.xml:system/etc/permissions/org.pixelexperience.ambient.play.xml \
     vendor/pixelstyle/etc/permissions/com.android.providers.weather.xml:system/etc/permissions/com.android.providers.weather.xml \
     vendor/pixelstyle/etc/default-permissions/com.android.providers.weather.xml:system/etc/default-permissions/com.android.providers.weather.xml
+
+# Lawnchair
+PRODUCT_COPY_FILES += \
+    vendor/pixelstyle/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/pixelstyle/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml	
