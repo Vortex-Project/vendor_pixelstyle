@@ -19,6 +19,12 @@ PRODUCT_PACKAGES += \
     WallpaperPickerGooglePrebuilt \
     WellbeingPrebuilt \
     MarkupGoogle \
+    LatinIME \
+    messaging \
+    DeskClock \
+    Dialer \
+    Gallery2 \
+    Contacts \
     WeatherProvider
 
 #Lawnchair
